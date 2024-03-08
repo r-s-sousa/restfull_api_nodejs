@@ -1,3 +1,6 @@
+// sudo lsof -i :<port in use>
+// kill -9 <PID>
+
 ### Options
 OPTIONS http://localhost:8080/
 Content-Type: application/json
