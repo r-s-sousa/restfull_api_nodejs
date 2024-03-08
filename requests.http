@@ -1,0 +1,46 @@
+### Options
+OPTIONS http://localhost:8080/
+Content-Type: application/json
+
+### health check api
+GET http://localhost:8080/health-check
+Content-Type: application/json
+
+### register user
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+    "name": "rebeca",
+    "age": 23
+}
+
+### get list of users
+GET http://localhost:8080/user?name=
+Content-Type: application/json
+
+### get especific user
+GET http://localhost:8080/user/6e96610b-aeae-4a5f-a0fb-b0674ab0ac41
+Content-Type: application/json
+
+### atualiza alguns campos da rebeca
+PATCH http://localhost:8080/user/6e96610b-aeae-4a5f-a0fb-b0674ab0ac41
+Content-Type: application/json
+
+{
+    "name": "teste",
+    "age": 20
+}
+
+### atualiza alguns campos ou cria o registro senão existir
+PUT http://localhost:8080/user/6e96610b-aeae-4a5f-a0fb-b0674ab0ac41
+Content-Type: application/json
+
+{
+    "name": "teste",
+    "age": 20
+}
+
+### Deleta um usuário específico
+DELETE http://localhost:8080/user/0d02d97d-006f-4573-a9f4-4386406eb54c
+Content-Type: application/json
