@@ -6,13 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc -p tsconfig.json",
-    "start": "nodemon index.ts"
+    "start": "nodemon index.ts",
+    "apm": "node -r newrelic ./dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "dotenv": "^16.4.5",
     "fastify": "^4.26.2",
+    "newrelic": "^11.12.0",
     "ts-node": "^10.9.2"
   },
   "devDependencies": {

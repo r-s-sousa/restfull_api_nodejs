@@ -1,6 +1,8 @@
 import fastify from "fastify";
 import UserDAL from "./source/database";
 
+require('newrelic');
+
 const server = fastify({
     logger: true
 });
